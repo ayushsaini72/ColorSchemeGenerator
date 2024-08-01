@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <form id="colorForm">
+                <input type="color" id="colorPicker"/>
+                <select name="choice" id="colorType">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button type="submit" id="getColor-btn">Get color scheme</button>
+             </form>
+        </header>
+        <main class="grid-container">
+             <div class="grid-item" id="item1"></div>
+             <div class="grid-item" id="item2"></div>
+             <div class="grid-item" id="item3"></div>
+             <div class="grid-item" id="item4"></div>
+             <div class="grid-item" id="item5"></div>
+        </main>
+        <footer class="hex-container">
+             <div class="hex-item" id="hex1"></div>
+             <div class="hex-item" id="hex2"></div>
+             <div class="hex-item" id="hex3"></div>
+             <div class="hex-item" id="hex4"></div>
+             <div class="hex-item" id="hex5"></div>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
